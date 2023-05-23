@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Estilos General */
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: antiquewhite;
+    background-image: url(../imagenes/fondo.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.navbar{
+    background-color: #feefdd;
+    color: black;
+    padding-right: 50px;
+}
+.navbar ul a:hover{
+    background-color: #50b2c0;
+    border-radius: 60%;
+    color: #faaa8d;
+}
+.navbar img{
+    width: 15%;
+    padding: 10px;
+}
+.nav-link{
+    color: black;
+    font-size: 1.5em;   
+}
+footer{
+    margin: 1rem 0;
+    padding: 1rem;
+    width: 100%;
+    background-color: #feefdd;
+    display: flex;  
+}
+footer .redessociales{
+    height: 20px;
+    margin: 10px;    
+}
+footer .redessociales a{
+    width: 25px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+footer .redessociales a:hover{
+    background-color:#50b2c0;
+    border-radius: 50%;
+}
+/* Estilos Index */
+.logoindex{
+    text-align: center;   
+}
+.logoindex img{
+  width: 20%;
+}
+.logoindex :hover{
+    background-color:#50b2c0;
+    border-radius: 50%;
+}
+h1{
+    text-align: center;
+    padding: 10px;
+}
+h2{
+    text-align: center;
+    padding: 10px;
+}
