@@ -201,11 +201,34 @@ video{
 .column {
     width: 50%;
     padding: 10px;
-}
-  
-  /* Estilos para pantallas de tamaño medio */
-  @media screen and (max-width: 768px) {
+} 
+@media screen and (max-width: 768px) {
     .column {
-      width: 100%;
+        width: 100%;
     }
+    .padre {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+          "compromisos"
+          "muestras"
+          "formulario";
+    }
+      .padre .compromisos {
+        margin: 0;
+    }
+      .padre .muestras {
+        justify-content: center;
+    }
+      .padre .muestras img {
+        width: 100%;
+        height: auto;
+        margin: 5px;
+    }    
+      .padre fieldset {
+        margin: 0;
+    }    
+      .padre fieldset div {
+        width: 100%;
+      }
 }
