@@ -1,109 +1,134 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /* Estilos General */
-body{
+body {
     font-family: 'Montserrat', sans-serif;
     background-color: antiquewhite;
     background-image: url(../imagenes/fondo.png);
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
-.navbar{
+
+.navbar {
     background-color: #feefdd;
     color: black;
     padding-right: 50px;
 }
-.navbar ul a:hover{
+
+.navbar ul a:hover {
     background-color: #50b2c0;
     border-radius: 60%;
     color: #faaa8d;
 }
-.navbar img{
+
+.navbar img {
     width: 15%;
     padding: 10px;
 }
-.nav-link{
+
+.nav-link {
     color: black;
     font-size: 1.5em;   
 }
-footer{
-    margin: 1rem 0;
-    padding: 1rem;
-    width: 100%;
+
+footer {
+    margin-top: auto;
     background-color: #feefdd;
-    display: flex;  
+    padding: 1rem;
+    text-align: center;
 }
-footer .redessociales{
+
+footer .redessociales {
     height: 20px;
     margin: 10px;    
 }
-footer .redessociales a{
+
+footer .redessociales a {
     width: 25px;
     color: black;
     text-decoration: none;
     text-align: center;
 }
-footer .redessociales a:hover{
-    background-color:#50b2c0;
+
+footer .redessociales a:hover {
+    background-color: #50b2c0;
     border-radius: 50%;
 }
+
 /* Estilos Index */
-.logoindex{
+.logoindex {
     text-align: center;   
 }
-.logoindex img{
-  width: 20%;
+
+.logoindex img {
+    width: 20%;
 }
-.logoindex :hover{
-    background-color:#50b2c0;
+
+.logoindex :hover {
+    background-color: #50b2c0;
     border-radius: 50%;
 }
-h1{
+
+h1 {
     text-align: center;
     padding: 10px;
 }
-h2{
+
+h2 {
     text-align: center;
     padding: 10px;
 }
+
 /* Estilos Nosotros */
-main{
+main {
     padding: 1.2rem;
     width: 100%;
     text-align: center;
 }
-.main h1{
+
+.main h1 {
     padding: 0.5rem;
     margin: 10px;
 }
-.main section h1{
+
+.main section h1 {
     padding: 0.5rem;
     margin: 10px;
 }
-.main section .principal{
+
+.main section .principal {
     margin-bottom: 1rem;
 }
-.principal img{
+
+.principal img {
     border: black 2.5px solid;
     margin: 20px;
     vertical-align: auto;        
 }
+
 .main section .principal img {
     max-width: 100%;
     height: auto;
 }
-main section p{
+
+main section p {
     line-height: 1.5;
 }
-.main section .adicional{
+
+.main section .adicional {
     display: flex;
     padding: 0.5rem;
     margin: 0.5rem;    
 }
-.adicional img{
+
+.adicional img {
     border: black solid 1.5px;
     width: 16%;
     padding: 4px;
@@ -111,11 +136,13 @@ main section p{
     align-items: center;
     opacity: 0.5; 
 }
-.adicional img:hover{
+
+.adicional img:hover {
     opacity: 1;
 }
+
 /* Estilos Como Adoptar */
-.padre{
+.padre {
     width: 100%;
     margin-top: 25px;
     display: grid;
@@ -126,48 +153,55 @@ main section p{
     "compromisos muestras"
     "formulario muestras";
 }
-.padre .compromisos{
-    background-color:#faaa8d;
+
+.padre .compromisos {
+    background-color: #faaa8d;
     grid-area: compromisos;
     padding: 10px;
     margin: 15px;
     border: black solid 2.5px;
 }
-.padre .compromisos h2{
+
+.padre .compromisos h2 {
     text-align: center;
     padding-top: 10px;
-
 }
-.padre .compromisos li{
+
+.padre .compromisos li {
     text-align: center;
     list-style-type: none;
     padding: 15px;
     font-size: 1em;
 }
-.padre .muestras{
+
+.padre .muestras {
     grid-area: muestras;
     display: flex;
     flex-wrap: wrap;
     margin: 5px; 
     width: 100%;
-    justify-content:space-around;   
+    justify-content: space-around;   
 }
-.padre .muestras img{
+
+.padre .muestras img {
     display: flex;
     flex-wrap: wrap;
     margin: 10px;
     width: 25%;
     height: 45%;
 }
-.muestras img{
+
+.muestras img {
     border: black solid 1.5px;
     opacity: 0.9;
 }
-.padre .muestras img:hover{
+
+.padre .muestras img:hover {
     transform: scale(1.2);
     opacity: 1;
 }
-.padre fieldset{
+
+.padre fieldset {
     background-color: #faaa8d;
     grid-area: formulario;
     text-align: center;
@@ -176,36 +210,43 @@ main section p{
     margin: 15px;
     border: black solid 2.5px;
 }
-.padre fieldset div{
+
+.padre fieldset div {
     width: 50%;
     margin: 15px; 
     align-items: center;
 }
+
 /* Estilos Rescates */
-video{
+video {
     width: 350px;
     height: 300px;
     padding: 5px;
     border: black solid;
     margin: 20px 20px;
 }
+
 .container {
     max-width: 100%;
     padding: 0 20px;
     margin: 0 auto;
 }  
+
 .row {
     display: flex;
     flex-wrap: wrap;
 }  
+
 .column {
     width: 50%;
     padding: 10px;
 } 
+
 @media screen and (max-width: 768px) {
     .column {
         width: 100%;
     }
+
     .padre {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
@@ -214,21 +255,26 @@ video{
           "muestras"
           "formulario";
     }
-      .padre .compromisos {
+
+    .padre .compromisos {
         margin: 0;
     }
-      .padre .muestras {
+
+    .padre .muestras {
         justify-content: center;
     }
-      .padre .muestras img {
+
+    .padre .muestras img {
         width: 100%;
         height: auto;
         margin: 5px;
     }    
-      .padre fieldset {
+
+    .padre fieldset {
         margin: 0;
     }    
-      .padre fieldset div {
+
+    .padre fieldset div {
         width: 100%;
-      }
+    }
 }
