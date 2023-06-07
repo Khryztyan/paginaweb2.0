@@ -1,0 +1,61 @@
+.main {
+  padding: 1.2rem;
+  width: 100%;
+  text-align: center;
+  section {
+    overflow-x: hidden;
+    p {
+        line-height: 1.5;
+        padding-top: 10px;
+    }
+  }
+}
+.cajadonacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+    .box {
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+      background-size: cover;
+      background-position: center;
+      border: black solid;
+      position: relative;  
+      &:nth-child(1) {
+        background-image: url("../imagenes/mercado\ de\ pago.png");
+      }  
+      &:nth-child(2) {
+        background-image: url("../imagenes/galguisocio.png");
+      }  
+      &:nth-child(3) {
+        background-image: url("../imagenes/old\ prince.png");
+      }  
+      &:nth-child(4) {
+        background-image: url("../imagenes/accesorios.png");
+      }  
+      &:nth-child(5) {
+        background-image: url("../imagenes/hogar\ de\ transito.png");
+      }  
+      .content {
+        text-align: center;
+        padding: 20px;
+        color: $colortexto;
+        font-size: 1.9rem;
+      }  
+      .button {
+        position: absolute;
+        bottom: 10px;
+        left: 50px;
+        padding: 10px 20px;
+        background-color: $colorcajas;
+        color:$colortexto;
+        text-decoration: none;
+        font-size: 1rem ;  
+        &:hover {
+          background-color: $colorhover;
+          color: $colorcajas;
+        }
+      }
+    }
+  }

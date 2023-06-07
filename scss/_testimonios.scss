@@ -1,0 +1,26 @@
+img{
+    width: 25px;
+}
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    div {
+        width: 35%;
+        margin: 4px;
+        padding: 4px;    
+    img {
+        border: black solid 1.5px;
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s ease
+    }
+        :hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+
+

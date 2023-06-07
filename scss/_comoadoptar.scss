@@ -1,0 +1,73 @@
+.padre {
+    width: 100%;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    grid-template-areas:
+    "compromisos muestras"
+    "formulario muestras";
+    .compromisos {
+        background-color:$colorcajas;
+        grid-area: compromisos;
+        padding: 10px;
+        margin: 15px;
+        border: black solid 2.5px;
+        h2 {
+            text-align: center;
+            padding-top: 10px;
+        }
+        li {
+            text-align: center;
+            list-style-type: none;
+            padding: 15px;
+            font-size: 1em;
+        }
+    }
+    .muestras {
+        grid-area: muestras;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 5px; 
+        width: 100%;
+        justify-content: space-around;  
+        img {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 10px;
+            width: 25%;
+            height: 45%;
+            border: black solid 1.5px;
+            opacity: 0.9;
+            img:hover {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+        }
+    }
+    fieldset {
+        background-color:$colorcajas;
+        grid-area: formulario;
+        text-align: center;
+        grid-area: compromisos;
+        padding: 10px;
+        margin: 15px;
+        border: black solid 2.5px;
+        div {
+            width: 50%;
+            margin: 15px; 
+            align-items: center;
+        }
+    }
+}
+.formulario-boton{
+    background-color:$colorcajas;
+    color:$colortexto;
+    border: black solid;
+    font-size: 2rem;
+    :hover {
+        background-color:$colorhover;
+        color:$colorcajas;
+    }
+}
