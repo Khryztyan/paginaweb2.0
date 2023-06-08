@@ -187,9 +187,6 @@ video {
   width: 50%;
   padding: 10px; }
 
-img {
-  width: 25px; }
-
 .image-container {
   display: flex;
   justify-content: space-between;
@@ -206,6 +203,21 @@ img {
       transition: transform 0.3s ease; }
     .image-container div :hover {
       transform: scale(1.2); }
+
+.up img {
+  width: 28px; }
+
+.btn {
+  background-color: #faaa8d;
+  color: black;
+  border: black solid; }
+  .btn:hover {
+    background-color: #50b2c0;
+    color: #faaa8d; }
+
+.ventas {
+  padding: 10px;
+  align-items: center; }
 
 * {
   margin: 0;
@@ -292,4 +304,8 @@ footer {
     .image-container .div img {
       width: 100%;
       height: auto;
-      margin-bottom: 10px; } }
+      margin-bottom: 10px; }
+  .ventas {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }

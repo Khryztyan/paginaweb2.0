@@ -1,4 +1,16 @@
-
+.btn{
+    background-color: $colorcajas;
+    color: $colortexto;
+    border: black solid;
+    &:hover {
+        background-color: $colorhover;
+        color: $colorcajas;
+    }
+}
+.ventas {
+    padding: 10px;
+    align-items: center;
+}
 
   
   
