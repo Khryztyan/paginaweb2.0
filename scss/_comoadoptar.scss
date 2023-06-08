@@ -29,21 +29,18 @@
         grid-area: muestras;
         display: flex;
         flex-wrap: wrap;
-        margin: 5px; 
+        margin: 20px; 
         width: 100%;
-        justify-content: space-around;  
-        img {
-            display: flex;
-            flex-wrap: wrap;
-            margin: 10px;
-            width: 25%;
-            height: 45%;
+        justify-content: space-around; 
+        align-items: center; 
+        img {   
+            vertical-align: auto;       
+            margin: 5px;
+            width: 35%;
             border: black solid 1.5px;
-            opacity: 0.9;
-            img:hover {
-                transform: scale(1.2);
-                opacity: 1;
-            }
+            &:hover{
+                transform: scale(1.4);
+            }          
         }
     }
     fieldset {
