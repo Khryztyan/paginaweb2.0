@@ -64,7 +64,7 @@ h2 {
   gap: 10px;
   grid-template-areas: "compromisos muestras" "formulario muestras"; }
   .padre .compromisos {
-    background-color: #faaa8d;
+    background: radial-gradient(ellipse, #feefdd, #faaa8d, #feefdd);
     grid-area: compromisos;
     padding: 10px;
     margin: 15px;
@@ -96,7 +96,7 @@ h2 {
         transform: scale(1.2);
         opacity: 1; }
   .padre fieldset {
-    background-color: #faaa8d;
+    background: radial-gradient(ellipse, #faaa8d, #feefdd, #faaa8d);
     grid-area: formulario;
     text-align: center;
     grid-area: compromisos;

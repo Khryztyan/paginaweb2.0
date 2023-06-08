@@ -9,7 +9,7 @@
     "compromisos muestras"
     "formulario muestras";
     .compromisos {
-        background-color:$colorcajas;
+        background: radial-gradient(ellipse, #feefdd, #faaa8d, #feefdd);
         grid-area: compromisos;
         padding: 10px;
         margin: 15px;
@@ -47,14 +47,14 @@
         }
     }
     fieldset {
-        background-color:$colorcajas;
+        background: radial-gradient(ellipse, #faaa8d, #feefdd, #faaa8d);
         grid-area: formulario;
         text-align: center;
         grid-area: compromisos;
         padding: 10px;
         margin: 15px;
         border: black solid 2.5px;
-        div {
+            div {
             width: 50%;
             margin: 15px; 
             align-items: center;
