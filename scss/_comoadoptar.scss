@@ -14,6 +14,7 @@
         padding: 10px;
         margin: 15px;
         border: black solid 2.5px;
+        align-items: center;
         h2 {
             text-align: center;
             padding-top: 10px;
@@ -43,19 +44,13 @@
             }          
         }
     }
-    fieldset {
-        background: radial-gradient(ellipse, #faaa8d, #feefdd, #faaa8d);
-        grid-area: formulario;
-        text-align: center;
-        grid-area: compromisos;
-        padding: 10px;
-        margin: 15px;
+    .casillaformulario {
         border: black solid 2.5px;
-        div {
-            width: 50%;
-            margin: 15px; 
-            align-items: center;
-        }
+        background: radial-gradient(ellipse, #faaa8d, #feefdd, #faaa8d);
+        padding: 30px;
+        margin: auto
+    ;
+      
     }
 }
 

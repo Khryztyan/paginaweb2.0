@@ -79,32 +79,30 @@
         <img src="../imagenes/comoadoptar5.jpg" alt="firma de adopcion">
         <img src="../imagenes/comoadoptar6.jpg" alt="toma de cerca del contraro">
       </div>
-      <div>
-        <fieldset>
-          <form action=""  class="formulario">
-            <h2>Formulario</h2>
-            <div>
-              <label for="nombreyapellido">Nombre y Apellido:</label>
-              <input type="text" name="nombreyapellido" placeholder="Nombre y Apellido" required>
-            </div>                          
-            <div>
-              <label for="email">Correo electronico:</label>
-              <input type="email" name="email" placeholder="galguitis@gmail.com" required >
-            </div>
-            <div>
-              <label for="Lugar">Localidad:</label>
-              <input type="text" name="lugar" placeholder="Santa Fe" required>
-            </div>
-            <div>
-              <label for="Comentarios">Comentarios</label><br>
-              <textarea name="comentarios" id="" cols="30" rows="10" placeholder="Deja tu mensaje"></textarea>
-            </div>
-            <div>
-              <input type="submit" class="boton" value="Enviar">
-            </div>    
-          </form>
-        </fieldset>
-      </div>             
+      <div class="casillaformulario">
+        <h2>Consultas</h2>
+        <form action="" class="formulario-form">
+          <div class="campo">
+            <label for="nombreyapellido">Nombre y Apellido:</label>
+            <input type="text" name="nombreyapellido" id="nombreyapellido" placeholder="Nombre y Apellido" required>
+          </div>
+          <div class="campo">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" name="email" id="email" placeholder="galguitis@gmail.com" required>
+          </div>
+          <div class="campo">
+            <label for="lugar">Provincia  o Ciudad:</label>
+            <input type="text" name="lugar" placeholder="Santa Fe" required>
+          </div>
+          <div class="campo">
+            <label for="comentarios">Comentarios:</label><br>
+            <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="Deja tu mensaje"></textarea>
+          </div>
+          <div class="campo">
+            <input type="submit" class="boton" value="Enviar">
+          </div>
+        </form>
+      </div>
     </section>
   </main>
   <footer>

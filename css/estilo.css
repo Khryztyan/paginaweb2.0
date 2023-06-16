@@ -68,7 +68,8 @@ h2 {
     grid-area: compromisos;
     padding: 10px;
     margin: 15px;
-    border: black solid 2.5px; }
+    border: black solid 2.5px;
+    align-items: center; }
     .padre .compromisos h2 {
       text-align: center;
       padding-top: 10px; }
@@ -92,18 +93,11 @@ h2 {
       border: black solid 1.5px; }
       .padre .muestras img:hover {
         transform: scale(1.4); }
-  .padre fieldset {
+  .padre .casillaformulario {
+    border: black solid 2.5px;
     background: radial-gradient(ellipse, #faaa8d, #feefdd, #faaa8d);
-    grid-area: formulario;
-    text-align: center;
-    grid-area: compromisos;
-    padding: 10px;
-    margin: 15px;
-    border: black solid 2.5px; }
-    .padre fieldset div {
-      width: 50%;
-      margin: 15px;
-      align-items: center; }
+    padding: 30px;
+    margin: auto; }
 
 .formulario-boton {
   background-color: #faaa8d;
